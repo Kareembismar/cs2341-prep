@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/karee/cs2341-prep/backtester/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
