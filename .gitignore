@@ -1,4 +1,7 @@
 hello
 types
 functions
+ma
+signals
+backtester/build/
 *.o
