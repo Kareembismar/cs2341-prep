@@ -2,10 +2,9 @@
 #include <vector>
 #include <string>
 
-std::vector<double> moving_average (std::vector <double> prices , int window);
-std::vector<std::string> signals(std::vector<double> prices, std::vector<double> ma, int window);
-double simulation(std::vector<double> prices, std::vector<std::string> calls, int window, double starting_cash, double fee, int& trades);
-
+std::vector<double> moving_average (const std::vector <double>& prices , int window);
+std::vector<std::string> signals(const std::vector<double>& prices, const std::vector<double>& ma, int window);
+double simulation(const std::vector<double>& prices, const std::vector<std::string>& calls, int window, double starting_cash, double fee, int& trades);
 
 
 int main () {

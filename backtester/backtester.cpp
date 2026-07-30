@@ -2,7 +2,7 @@
 #include <vector>
 #include <string>
 
-std::vector<double> moving_average (std::vector <double> prices , int window){
+std::vector<double> moving_average (const std::vector <double>& prices , int window){
     std::vector<double> ma;
     for (size_t i= 0; i < prices.size () - window + 1; i++){
         double sum = 0.0;
@@ -15,7 +15,7 @@ std::vector<double> moving_average (std::vector <double> prices , int window){
     return ma;
 }
 
-std::vector<std::string> signals(std::vector<double> prices, std::vector<double> ma, int window){
+std::vector<std::string> signals(const std::vector<double>& prices, const std::vector<double>& ma, int window){
     std::vector<std::string> calls;
     for (size_t i = 0; i < ma.size(); i++) {
         double today = prices[i+window -1];
@@ -32,8 +32,8 @@ std::vector<std::string> signals(std::vector<double> prices, std::vector<double>
 }
 
 
-double simulation(std::vector<double> prices, std::vector<std::string> calls, int window, double starting_cash, double fee, int& trades){
-
+double simulation(const std::vector<double>& prices, const std::vector<std::string>& calls, int window, double starting_cash, double fee, int& trades)
+{
     double cash = starting_cash;
     double shares = 0.0;
     trades = 0;
