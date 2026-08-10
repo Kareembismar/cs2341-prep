@@ -1,3 +1,0 @@
-/home/karee/cs2341-prep/backtester/build/CMakeFiles/backtester.dir
-/home/karee/cs2341-prep/backtester/build/CMakeFiles/edit_cache.dir
-/home/karee/cs2341-prep/backtester/build/CMakeFiles/rebuild_cache.dir
