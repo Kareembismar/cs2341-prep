@@ -32,6 +32,12 @@ int main() {
     inspect_copy(prices);
     inspect_ref(prices);    
 
+    double* heap_cash = new double(1000.0);
+    std::cout << "heap value: " << *heap_cash << std::endl;
+    std::cout << "heap addr: " << heap_cash << std::endl;
+    delete heap_cash;   
+
+
     return 0;
 
 
